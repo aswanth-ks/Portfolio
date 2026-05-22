@@ -1,64 +1,170 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaJava, FaSearch } from "react-icons/fa";
+import {
+  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaJava, FaNodeJs,
+  FaPython, FaGitAlt, FaSearch, FaCamera, FaFilm, FaFigma,
+} from "react-icons/fa";
+import {
+  SiTailwindcss, SiSpringboot, SiFastapi, SiMongodb, SiMysql,
+  SiPostman, SiAdobepremierepro, SiGoogleanalytics,
+} from "react-icons/si";
+import { VscCode } from "react-icons/vsc";
 
-const skills = [
-  { name: "HTML", level: 90, color: "from-orange-400 to-red-500", Icon: FaHtml5, description: "Semantic structure and responsive layout." },
-  { name: "CSS", level: 85, color: "from-blue-400 to-blue-700", Icon: FaCss3Alt, description: "Flexbox, Grid, animations, Tailwind." },
-  { name: "Java", level: 30, color: "from-yellow-400 to-yellow-600", Icon: FaJava, description: "OOP basics, Spring Boot intro." },
-  { name: "SEO", level: 80, color: "from-purple-500 to-indigo-700", Icon: FaSearch, description: "On-page SEO, meta tags, sitemaps." },
+const categories = [
+  {
+    title: "Frontend",
+    gradient: "from-blue-500 to-cyan-400",
+    skills: [
+      { name: "HTML5", icon: FaHtml5, color: "#e34f26" },
+      { name: "CSS3", icon: FaCss3Alt, color: "#1572b6" },
+      { name: "JavaScript", icon: FaJsSquare, color: "#f7df1e" },
+      { name: "React", icon: FaReact, color: "#61dafb" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06b6d4" },
+    ],
+  },
+  {
+    title: "Backend",
+    gradient: "from-purple-500 to-pink-500",
+    skills: [
+      { name: "Java", icon: FaJava, color: "#ed8b00" },
+      { name: "Spring Boot", icon: SiSpringboot, color: "#6db33f" },
+      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+      { name: "Node.js", icon: FaNodeJs, color: "#339933" },
+      { name: "Python", icon: FaPython, color: "#3776ab" },
+    ],
+  },
+  {
+    title: "Database",
+    gradient: "from-green-500 to-emerald-400",
+    skills: [
+      { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
+      { name: "MySQL", icon: SiMysql, color: "#4479a1" },
+    ],
+  },
+  {
+    title: "Tools & DevOps",
+    gradient: "from-amber-400 to-orange-500",
+    skills: [
+      { name: "Git", icon: FaGitAlt, color: "#f05032" },
+      { name: "VS Code", icon: VscCode, color: "#007acc" },
+      { name: "Postman", icon: SiPostman, color: "#ff6c37" },
+      { name: "Figma", icon: FaFigma, color: "#f24e1e" },
+    ],
+  },
+  {
+    title: "SEO",
+    gradient: "from-cyan-400 to-blue-500",
+    skills: [
+      { name: "On-Page SEO", icon: FaSearch, color: "#4285f4" },
+      { name: "Google Analytics", icon: SiGoogleanalytics, color: "#e37400" },
+    ],
+  },
+  {
+    title: "Creative Tech",
+    gradient: "from-pink-500 to-purple-500",
+    skills: [
+      { name: "Photography", icon: FaCamera, color: "#e91e90" },
+      { name: "Filmmaking", icon: FaFilm, color: "#9333ea" },
+      { name: "Premiere Pro", icon: SiAdobepremierepro, color: "#9999ff" },
+    ],
+  },
 ];
 
-function Tech() {
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+export default function Tech() {
   return (
-    <section id="tech" className="min-h-screen bg-gradient-to-br from-gray-100 to-white py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <motion.h2
-          className="text-4xl font-extrabold text-center text-indigo-900 mb-12 tracking-wide"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+    <motion.section
+      className="relative min-h-screen bg-navy-950 py-24 px-6 overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+    >
+      {/* Background accents */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[140px]" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          My Technical Skills
-        </motion.h2>
+          <span className="inline-block px-4 py-1.5 rounded-full glass text-xs font-medium text-white/50 uppercase tracking-widest mb-4">
+            Technical Expertise
+          </span>
+          <h2 className="font-heading text-4xl sm:text-5xl font-extrabold gradient-text mb-4">
+            Skills & Technologies
+          </h2>
+          <p className="text-white/40 max-w-xl mx-auto text-lg">
+            A curated stack of tools and technologies I use to bring ideas to life.
+          </p>
+        </motion.div>
 
-        <div className="backdrop-blur-md bg-white/30 rounded-xl shadow-2xl p-10 grid md:grid-cols-2 gap-10">
-          {skills.map((skill, index) => (
+        {/* Categories */}
+        <div className="space-y-12">
+          {categories.map((cat, catIndex) => (
             <motion.div
-              key={skill.name}
-              className="group"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              key={cat.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: catIndex * 0.08 }}
             >
-              <div className="flex items-center justify-between mb-2">
-                <div className="flex items-center gap-3">
-                  <skill.Icon className="text-2xl text-indigo-600" />
-                  <span className="text-lg font-semibold text-gray-800">{skill.name}</span>
-                </div>
-                <span className="text-sm text-gray-600">{skill.level}%</span>
+              {/* Category title */}
+              <div className="flex items-center gap-3 mb-5">
+                <div className={`w-8 h-0.5 rounded-full bg-gradient-to-r ${cat.gradient}`} />
+                <h3 className="font-heading text-lg font-semibold text-white/70">
+                  {cat.title}
+                </h3>
               </div>
 
-              <div className="w-full h-4 rounded-full bg-gray-300 overflow-hidden">
-                <motion.div
-                  className={`h-4 bg-gradient-to-r ${skill.color} rounded-full shadow-md`}
-                  style={{ width: `${skill.level}%` }}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1 }}
-                />
-              </div>
-
-              {/* Tooltip on hover */}
-              <div className="text-xs text-gray-600 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {skill.description}
-              </div>
+              {/* Skill cards grid */}
+              <motion.div
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-30px" }}
+              >
+                {cat.skills.map((skill) => (
+                  <motion.div
+                    key={skill.name}
+                    variants={cardVariants}
+                    whileHover={{
+                      scale: 1.05,
+                      y: -4,
+                      transition: { duration: 0.2 },
+                    }}
+                    className="group glass rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default hover:glow-border transition-shadow duration-300"
+                  >
+                    <skill.icon
+                      className="text-3xl transition-all duration-300 group-hover:scale-110"
+                      style={{ color: skill.color }}
+                    />
+                    <span className="text-sm font-medium text-white/70 group-hover:text-white transition-colors text-center">
+                      {skill.name}
+                    </span>
+                  </motion.div>
+                ))}
+              </motion.div>
             </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
-
-export default Tech;
