@@ -4,13 +4,27 @@ import { HiX } from "react-icons/hi";
 import ProtectedImage from "../components/ui/ProtectedImage";
 import SEO from "../components/ui/SEO";
 
-function importAll(r) {
-  return r.keys().map(r);
-}
+const photos = [
+  "/portfolio/photography/1.webp",
+  "/portfolio/photography/2.webp",
+  "/portfolio/photography/3.webp",
+  "/portfolio/photography/4.webp",
+  "/portfolio/photography/5.webp",
+  "/portfolio/photography/6.webp",
+  "/portfolio/photography/7.webp",
+  "/portfolio/photography/8.webp",
+  "/portfolio/photography/9.webp",
+  "/portfolio/photography/10.webp",
+  "/portfolio/photography/11.webp",
+  "/portfolio/photography/12.webp",
+  "/portfolio/photography/13.webp",
+  "/portfolio/photography/14.webp",
+  "/portfolio/photography/15.webp",
+  "/portfolio/photography/16.webp",
+  "/portfolio/photography/17.webp",
+  "/portfolio/photography/18.webp"
+];
 
-const photos = importAll(
-  require.context("../assets/images/photography", false, /\.(jpe?g|png|webp|svg)$/i)
-);
 
 export default function Photo() {
   const [active, setActive] = useState(null);

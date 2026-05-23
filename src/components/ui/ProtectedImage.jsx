@@ -18,8 +18,16 @@ export default function ProtectedImage({
   motionProps = {},
   watermark = false,
   onClick,
-  loading,
+  loading = 'lazy',
 }) {
+  const isImageKit = typeof src === 'string' && src.startsWith('/portfolio/');
+  const imageKitUrl = process.env.REACT_APP_IMAGEKIT_URL;
+
+  // Construct final image source
+  const finalSrc = isImageKit && imageKitUrl
+    ? `${imageKitUrl}${src}?tr=w-1400,q-80,f-webp`
+    : src;
+
   const ImgTag = isMotion ? motion.img : 'img';
   
   return (
@@ -29,7 +37,7 @@ export default function ProtectedImage({
       onClick={onClick}
     >
       <ImgTag
-        src={src}
+        src={finalSrc}
         alt={alt}
         className={`select-none pointer-events-none ${className}`}
         draggable="false"
@@ -46,9 +54,10 @@ export default function ProtectedImage({
       {/* Subtle Watermark */}
       {watermark && (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-20 pointer-events-none opacity-[0.20] text-white font-bold text-lg sm:text-2xl md:text-3xl tracking-[0.4em] uppercase mix-blend-overlay drop-shadow-md">
-          ASWANTH KS
+          © Aswanth Karuppannan
         </div>
       )}
     </div>
   );
 }
+
