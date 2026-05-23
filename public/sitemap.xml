@@ -36,14 +36,34 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/film</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aswanthks-portfolio.vercel.app/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aswanthks-portfolio.vercel.app/blog/rover-battery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aswanthks-portfolio.vercel.app/blog/ieee-research</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aswanthks-portfolio.vercel.app/blog/digsafe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aswanthks-portfolio.vercel.app/blog/smartaid</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aswanthks-portfolio.vercel.app/blog/trusttrade</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aswanthks-portfolio.vercel.app/contact</loc>
