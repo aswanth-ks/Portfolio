@@ -1,0 +1,122 @@
+import {
+  FiShield,
+  FiShoppingCart,
+  FiServer,
+  FiZap,
+} from "react-icons/fi";
+
+export const featuredProjects = [
+  {
+    id: 1,
+    number: "01",
+    icon: FiZap,
+    name: "SMART-AID",
+    category: "Hackathon Winner",
+    date: "Oct 2025",
+    role: "IoT Developer",
+    teamSize: "4",
+    description:
+      "AI-powered emergency response system designed to drastically reduce the delay between accidents and medical assistance. Combines IoT sensor fusion with intelligent routing to optimize the golden hour for accident victims.",
+    highlights: [
+      "Developed accident detection logic using accelerometer and gyroscope sensor fusion",
+      "Built automated emergency alert workflow with real-time location sharing",
+      "Connected patients, ambulance drivers, and hospitals in a unified platform",
+      "Implemented intelligent hospital and ambulance selection algorithms",
+      "Optimized golden-hour emergency response coordination",
+    ],
+    tech: ["IoT Sensors", "Accelerometer", "Gyroscope", "GPS", "AI Logic", "Mobile Platform"],
+    github: "https://github.com/aswanth-ks/LifeLink",
+    gradient: "from-amber-400 to-orange-500",
+    achievement: "1st Prize Winner",
+    impactMetric: "1st Prize — Hackathon",
+    impactColor: "text-amber-300",
+    impactBorder: "border-amber-500/15",
+  },
+  {
+    id: 2,
+    number: "02",
+    icon: FiShield,
+    name: "DIGSAFE",
+    category: "Research / IoT",
+    date: "Oct 2025",
+    role: "IoT Developer / Frontend",
+    teamSize: "4",
+    description:
+      "Smart industrial safety helmet designed for mine and construction workers in hazardous environments. Integrates real-time biometric, environmental, and gas monitoring with 5G-enabled remote alert systems.",
+    highlights: [
+      "Built worker safety monitoring with real-time sensor data streaming",
+      "Integrated gas, environmental, and biometric detection modules",
+      "Developed remote alert monitoring dashboard for supervisors",
+      "Implemented accident prevention and hazard detection workflows",
+    ],
+    tech: ["IoT Sensors", "ESP32", "Monitoring Dashboard", "5G Integration"],
+    github: "https://github.com/aswanth-ks/DigSafe",
+    gradient: "from-cyan-500 to-blue-600",
+    researchBadge: "IEEE Paper",
+    impactMetric: "IEEE Conference Paper Published",
+    impactColor: "text-cyan-300",
+    impactBorder: "border-cyan-500/15",
+  },
+];
+
+export const standardProjects = [
+  {
+    id: 3,
+    number: "03",
+    icon: FiServer,
+    name: "Employee Management System",
+    category: "Backend API",
+    date: "2026",
+    role: "Backend Developer",
+    description:
+      "Production-grade Employee Management REST API built with Java, Spring Boot, and MySQL. Demonstrates backend engineering fundamentals including clean API design, data persistence, and layered architecture.",
+    highlights: [
+      "Full CRUD REST API with clean endpoint design",
+      "Spring Data JPA integration with MySQL persistence",
+      "Layered architecture — Controller, Service, Repository pattern",
+      "Backend architecture designed for scalability",
+    ],
+    tech: ["Java", "Spring Boot", "MySQL", "REST API", "Spring Data JPA"],
+    github: "https://github.com/aswanth-ks/Employee-Management-System",
+    gradient: "from-blue-500 to-indigo-600",
+    backendHighlight: true,
+  },
+  {
+    id: 4,
+    number: "04",
+    icon: FiShield,
+    name: "TRUSTTRADE",
+    category: "Full Stack Platform",
+    date: "Jan 2026",
+    role: "Frontend / Database Dev",
+    description:
+      "Secure digital trading platform solving trust issues in peer-to-peer online transactions. Features comprehensive user verification, anti-fraud architecture, and escrow-based payment protection.",
+    highlights: [
+      "User verification and anti-fraud trust architecture",
+      "Transaction tracking with reputation management",
+      "Dispute resolution workflows",
+      "Escrow-based payment protection concepts",
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "MySQL", "PHP", "XAMPP"],
+    github: "https://github.com/aswanth-ks/TrustTrade",
+    gradient: "from-purple-500 to-pink-500",
+  },
+  {
+    id: 5,
+    number: "05",
+    icon: FiShoppingCart,
+    name: "CARTWAVE",
+    category: "Full Stack E-Commerce",
+    description:
+      "Modern full-stack e-commerce checkout system with cart management, seamless payment flow, multiple payment options (Google Pay, PhonePe, Net Banking, COD), and SQLite-based order management.",
+    highlights: [
+      "Complete checkout flow with multi-step UX",
+      "Multiple payment integrations (GPay, PhonePe, Net Banking, COD)",
+      "Cart architecture with state management",
+      "SQLite-based order handling and backend workflow",
+    ],
+    tech: ["Full Stack", "SQLite", "Payment Integration", "E-Commerce"],
+    github: "https://github.com/aswanth-ks/CartWave",
+    gradient: "from-green-500 to-emerald-500",
+  },
+];
