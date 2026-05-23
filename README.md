@@ -11,7 +11,7 @@ A premium, production-grade developer portfolio built with React, showcasing eng
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-10-ff0055?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?style=flat-square&logo=vercel&logoColor=white)](https://aswanth-portfolio.vercel.app)
 
-[**Live Site →**](https://aswanth-portfolio.vercel.app)
+[**Live Site →**](https://aswanthks-portfolio.vercel.app)
 
 </div>
 
