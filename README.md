@@ -94,7 +94,7 @@ The portfolio serves as both a recruiter-facing resume and a personal brand plat
 
 ## Screenshots
 
-> Screenshots coming soon. Visit the [live site](https://aswanth-portfolio.vercel.app) for the full experience.
+> Screenshots coming soon. Visit the [live site](https://aswanthks-portfolio.vercel.app) for the full experience.
 
 ---
 
