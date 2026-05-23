@@ -200,10 +200,15 @@ Portfolio/
 - **Instagram** — [@_vision69_](https://www.instagram.com/_vision69_)
 
 ---
+!! © Aswanth Karuppannan
+
+This portfolio, its design, photography, written content, and source code are proprietary.
+
+Unauthorized copying, redistribution, or commercial reuse is prohibited without permission.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+All Rights Reserved [MIT License](LICENSE).
 
 ---
 
