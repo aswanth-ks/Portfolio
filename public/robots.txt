@@ -1,4 +1,12 @@
+# Robots.txt for aswanthks-portfolio.vercel.app
+
 User-agent: *
 Allow: /
+Disallow: /static/
+Disallow: /manifest.json
 
+# Sitemap
 Sitemap: https://aswanthks-portfolio.vercel.app/sitemap.xml
+
+# Host
+Host: https://aswanthks-portfolio.vercel.app

@@ -1,4 +1,6 @@
-export const SITE_URL = "https://aswanth-portfolio.vercel.app";
+export const SITE_URL = "https://aswanthks-portfolio.vercel.app";
+
+export const TITLE_SUFFIX = " | Aswanth Karuppannan";
 
 export const DEFAULT_SEO = {
   title: "Aswanth Karuppannan | Backend Developer Portfolio",
@@ -8,5 +10,6 @@ export const DEFAULT_SEO = {
   twitterHandle: "@_vision69_", // Using instagram handle as placeholder for twitter if not available
   image: `${SITE_URL}/og-image.png`,
   url: SITE_URL,
-  type: "website"
+  type: "website",
+  locale: "en_US"
 };
