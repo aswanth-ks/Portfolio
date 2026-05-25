@@ -26,6 +26,7 @@ const routes = [
   { path: '/blog/digsafe', title: 'DIGSAFE: Smart Helmet for Miners' + TITLE_SUFFIX, desc: 'DIGSAFE: A 5G-Enabled Smart Helmet for Worker Safety in Hazardous Environments', type: 'article', date: '2025-11-09' },
   { path: '/blog/smartaid', title: 'SmartAid: Award-Winning Emergency Healthcare System' + TITLE_SUFFIX, desc: 'SmartAid – AI & IoT Powered Emergency Response System', type: 'article', date: '2025-10-10' },
   { path: '/blog/trusttrade', title: 'TrustTrade: Secure Escrow Platform for Digital Assets' + TITLE_SUFFIX, desc: 'How the Idea of TrustTrade Was Born', type: 'article', date: '2026-03-02' },
+  { path: '/blog/seo-architecture', title: 'How I Fixed My React Portfolio’s SEO (After Realizing Google Was Seeing the Wrong Site)' + TITLE_SUFFIX, desc: 'A real-world debugging story: How I solved the React SPA SEO problem and engineered a custom static prerender architecture for Vercel.', type: 'article', date: '2026-05-26' },
   { path: '/contact', title: 'Contact' + TITLE_SUFFIX, desc: 'Get in touch with me for opportunities and collaboration.' },
 ];
 

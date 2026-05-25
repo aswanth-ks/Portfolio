@@ -1,5 +1,6 @@
 import batteryFront from "../assets/images/blog/Battery_front.png";
 import ieee1 from "../assets/images/blog/ieee1.png";
+import SEO1 from "../assets/images/blog/SEO1.png";
 import digsafe1 from "../assets/images/blog/DigSafe1.png";
 import smartAid1 from "../assets/images/blog/SmartAid1.png";
 import trustTrade1 from "../assets/images/blog/TrustTrade1.png";
@@ -59,5 +60,16 @@ export const featuredPosts = [
     image: trustTrade1,
     gradient: "from-indigo-500 to-blue-500",
     link: "/blog/trusttrade",
+  },
+  {
+    id: 6,
+    title: "How I Fixed My React Portfolio’s SEO (After Realizing Google Was Seeing the Wrong Site)",
+    excerpt: "A real-world debugging story: How I solved the React SPA SEO problem and engineered a custom static prerender architecture for Vercel.",
+    category: "Software Engineering",
+    date: "2026-05-26",
+    readTime: "8–10 min read",
+    image: SEO1,
+    gradient: "from-emerald-500 to-cyan-500",
+    link: "/blog/seo-architecture",
   }
 ];

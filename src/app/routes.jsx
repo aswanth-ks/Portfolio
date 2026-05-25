@@ -18,6 +18,7 @@ const IEEEResearchPost = lazy(() => import("../blog/IEEEResearchPost"));
 const DigsafePost = lazy(() => import("../blog/DigsafePost"));
 const SmartAidPost = lazy(() => import("../blog/SmartAidPost"));
 const TrustTradePost = lazy(() => import("../blog/TrustTradePost"));
+const SEOFixPost = lazy(() => import("../blog/SEOFixPost"));
 
 // Minimal fallback to prevent UI flashes while lazy loading chunks
 const FallbackLoader = () => <div className="min-h-screen bg-navy-950" />;
@@ -41,6 +42,7 @@ export default function AppRoutes() {
           <Route path="/blog/digsafe" element={<DigsafePost />} />
           <Route path="/blog/smartaid" element={<SmartAidPost />} />
           <Route path="/blog/trusttrade" element={<TrustTradePost />} />
+          <Route path="/blog/seo-architecture" element={<SEOFixPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>

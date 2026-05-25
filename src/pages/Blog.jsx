@@ -22,7 +22,7 @@ const itemVariants = {
 
 
 
-function BlogCard({ post }) {
+function BlogCard({ post, isRecent }) {
   return (
     <motion.article
       variants={itemVariants}
@@ -37,7 +37,12 @@ function BlogCard({ post }) {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           watermark={true}
         />
-        <div className="absolute top-4 left-4 z-10">
+        <div className="absolute top-4 left-4 z-10 flex gap-2">
+          {isRecent && (
+            <span className="px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/10 text-white shadow-lg backdrop-blur-md border border-white/20">
+              RECENT
+            </span>
+          )}
           <span className={`px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r ${post.gradient} text-white shadow-lg backdrop-blur-md`}>
             {post.category}
           </span>
@@ -77,6 +82,9 @@ function BlogCard({ post }) {
    BLOG PAGE
    ═══════════════════════════════════════════════════ */
 export default function Blog() {
+  // Sort posts by date descending
+  const sortedPosts = [...featuredPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
   return (
     <motion.section
       className="relative min-h-screen bg-navy-950 overflow-hidden"
@@ -144,8 +152,8 @@ export default function Blog() {
           initial="hidden"
           animate="visible"
         >
-          {featuredPosts.map((post) => (
-            <BlogCard key={post.id} post={post} />
+          {sortedPosts.map((post, index) => (
+            <BlogCard key={post.id} post={post} isRecent={index < 2} />
           ))}
         </motion.div>
 
