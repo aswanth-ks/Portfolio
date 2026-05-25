@@ -15,13 +15,14 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build && node scripts/seo-injector.js"
+    "build": "react-scripts build && node scripts/static-seo-generator.js"
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "chrome 70"
     ],
     "development": [
       "last 1 chrome version",
