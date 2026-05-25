@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "postbuild": "node prerender.js"
   },
   "browserslist": {
     "production": [
@@ -28,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "express": "^5.2.1",
+    "puppeteer": "^25.0.4"
   }
 }
