@@ -21,11 +21,11 @@ const routes = [
   { path: '/tech', title: 'Tech Stack' + TITLE_SUFFIX, desc: 'My technical skills, languages, and tools.' },
   { path: '/photo', title: 'Photography' + TITLE_SUFFIX, desc: 'My creative photography portfolio.' },
   { path: '/blog', title: 'Journal' + TITLE_SUFFIX, desc: 'Articles on software engineering, hardware, and research.' },
-  { path: '/blog/rover-battery', title: 'Rover Battery Build: Powering Autonomous Robotics' + TITLE_SUFFIX, desc: 'Building a Custom 3S2P Lithium Battery Pack for My Smart Agricultural Rover', type: 'article' },
-  { path: '/blog/ieee-research', title: 'IEEE Research Journey: Optimizing Edge Computing' + TITLE_SUFFIX, desc: 'Lessons from Publishing My First IEEE Research Paper as a Student', type: 'article' },
-  { path: '/blog/digsafe', title: 'DIGSAFE: Smart Helmet for Miners' + TITLE_SUFFIX, desc: 'DIGSAFE: A 5G-Enabled Smart Helmet for Worker Safety in Hazardous Environments', type: 'article' },
-  { path: '/blog/smartaid', title: 'SmartAid: Award-Winning Emergency Healthcare System' + TITLE_SUFFIX, desc: 'SmartAid – AI & IoT Powered Emergency Response System', type: 'article' },
-  { path: '/blog/trusttrade', title: 'TrustTrade: Secure Escrow Platform for Digital Assets' + TITLE_SUFFIX, desc: 'How the Idea of TrustTrade Was Born', type: 'article' },
+  { path: '/blog/rover-battery', title: 'Rover Battery Build: Powering Autonomous Robotics' + TITLE_SUFFIX, desc: 'Building a Custom 3S2P Lithium Battery Pack for My Smart Agricultural Rover', type: 'article', date: '2026-04-23' },
+  { path: '/blog/ieee-research', title: 'IEEE Research Journey: Optimizing Edge Computing' + TITLE_SUFFIX, desc: 'Lessons from Publishing My First IEEE Research Paper as a Student', type: 'article', date: '2026-03-25' },
+  { path: '/blog/digsafe', title: 'DIGSAFE: Smart Helmet for Miners' + TITLE_SUFFIX, desc: 'DIGSAFE: A 5G-Enabled Smart Helmet for Worker Safety in Hazardous Environments', type: 'article', date: '2025-11-09' },
+  { path: '/blog/smartaid', title: 'SmartAid: Award-Winning Emergency Healthcare System' + TITLE_SUFFIX, desc: 'SmartAid – AI & IoT Powered Emergency Response System', type: 'article', date: '2025-10-10' },
+  { path: '/blog/trusttrade', title: 'TrustTrade: Secure Escrow Platform for Digital Assets' + TITLE_SUFFIX, desc: 'How the Idea of TrustTrade Was Born', type: 'article', date: '2026-03-02' },
   { path: '/contact', title: 'Contact' + TITLE_SUFFIX, desc: 'Get in touch with me for opportunities and collaboration.' },
 ];
 
@@ -66,7 +66,7 @@ const personSchema = {
   "sameAs": ["https://github.com/aswanth-ks", "https://www.linkedin.com/in/aswanth-karuppannan/", "https://www.instagram.com/_vision69_"],
   "knowsAbout": ["Java", "Spring Boot", "React", "IoT", "AI", "Backend Development", "REST APIs", "MySQL", "MongoDB"],
   "worksFor": { "@type": "Organization", "name": "MoviCloud Labs Pvt Ltd" },
-  "alumniOf": { "@type": "EducationalOrganization", "name": "Computer Science Engineering" }
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Kumaraswamy College of Engineering" }
 };
 
 routes.forEach(route => {
@@ -84,6 +84,8 @@ routes.forEach(route => {
       "description": route.desc,
       "image": DEFAULT_IMAGE,
       "url": currentUrl,
+      "datePublished": route.date,
+      "dateModified": route.date,
       "mainEntityOfPage": { "@type": "WebPage", "@id": currentUrl }
     };
   }
