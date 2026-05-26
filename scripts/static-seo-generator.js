@@ -19,7 +19,7 @@ const routes = [
   { path: '/experience', title: 'Experience' + TITLE_SUFFIX, desc: 'My professional experience as a Software Developer.' },
   { path: '/achievements', title: 'Achievements' + TITLE_SUFFIX, desc: 'Awards, hackathons, and certifications.' },
   { path: '/tech', title: 'Tech Stack' + TITLE_SUFFIX, desc: 'My technical skills, languages, and tools.' },
-  { path: '/photo', title: 'Photography' + TITLE_SUFFIX, desc: 'My creative photography portfolio.' },
+  { path: '/photo', title: 'Photography | Visual Storytelling & Cinematic Frames' + TITLE_SUFFIX, desc: 'Explore the photography portfolio of Aswanth Karuppannan — cinematic street photography, travel frames from Thailand, visual storytelling, and creative perspectives from a photographer and creative technologist in Tamil Nadu.' },
   { path: '/blog', title: 'Journal' + TITLE_SUFFIX, desc: 'Articles on software engineering, hardware, and research.' },
   { path: '/blog/rover-battery', title: 'Rover Battery Build: Powering Autonomous Robotics' + TITLE_SUFFIX, desc: 'Building a Custom 3S2P Lithium Battery Pack for My Smart Agricultural Rover', type: 'article', date: '2026-04-23' },
   { path: '/blog/ieee-research', title: 'IEEE Research Journey: Optimizing Edge Computing' + TITLE_SUFFIX, desc: 'Lessons from Publishing My First IEEE Research Paper as a Student', type: 'article', date: '2026-03-25' },
