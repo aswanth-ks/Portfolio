@@ -84,11 +84,11 @@ The portfolio serves as both a recruiter-facing resume and a personal brand plat
 
 ## Blog Highlights
 
-- [IEEE Research Journey](https://aswanth-portfolio.vercel.app/blog/ieee-research) — Edge computing optimization paper
-- [DIGSAFE Engineering Story](https://aswanth-portfolio.vercel.app/blog/digsafe) — IoT smart helmet deep-dive
-- [SmartAid Build Log](https://aswanth-portfolio.vercel.app/blog/smartaid) — Hackathon-winning healthcare system
-- [Rover Battery Architecture](https://aswanth-portfolio.vercel.app/blog/rover-battery) — Custom battery for autonomous robotics
-- [TrustTrade Origin Story](https://aswanth-portfolio.vercel.app/blog/trusttrade) — Building a secure escrow platform
+- [IEEE Research Journey](https://aswanthks-portfolio.vercel.app/blog/ieee-research) — Edge computing optimization paper
+- [DIGSAFE Engineering Story](https://aswanthks-portfolio.vercel.app/blog/digsafe) — IoT smart helmet deep-dive
+- [SmartAid Build Log](https://aswanth-portfolioks.vercel.app/blog/smartaid) — Hackathon-winning healthcare system
+- [Rover Battery Architecture](https://aswanthks-portfolio.vercel.app/blog/rover-battery) — Custom battery for autonomous robotics
+- [TrustTrade Origin Story](https://aswanthks-portfolio.vercel.app/blog/trusttrade) — Building a secure escrow platform
 
 ---
 
