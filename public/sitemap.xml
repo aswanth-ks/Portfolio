@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/</loc>
+    <loc>https://aswanthks.dev/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/about</loc>
+    <loc>https://aswanthks.dev/about</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/projects</loc>
+    <loc>https://aswanthks.dev/projects</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/experience</loc>
+    <loc>https://aswanthks.dev/experience</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/achievements</loc>
+    <loc>https://aswanthks.dev/achievements</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/tech</loc>
+    <loc>https://aswanthks.dev/tech</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/photo</loc>
+    <loc>https://aswanthks.dev/photo</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog</loc>
+    <loc>https://aswanthks.dev/blog</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/rover-battery</loc>
+    <loc>https://aswanthks.dev/blog/rover-battery</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/ieee-research</loc>
+    <loc>https://aswanthks.dev/blog/ieee-research</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/digsafe</loc>
+    <loc>https://aswanthks.dev/blog/digsafe</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/smartaid</loc>
+    <loc>https://aswanthks.dev/blog/smartaid</loc>
     <lastmod>2025-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/trusttrade</loc>
+    <loc>https://aswanthks.dev/blog/trusttrade</loc>
     <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/blog/seo-architecture</loc>
+    <loc>https://aswanthks.dev/blog/seo-architecture</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aswanthks-portfolio.vercel.app/contact</loc>
+    <loc>https://aswanthks.dev/contact</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://aswanthks-portfolio.vercel.app";
+export const SITE_URL = "https://aswanthks.dev";
 
 export const TITLE_SUFFIX = " | Aswanth Karuppannan";
 

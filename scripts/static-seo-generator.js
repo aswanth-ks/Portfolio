@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://aswanthks-portfolio.vercel.app';
+const SITE_URL = 'https://aswanthks.dev';
 const TITLE_SUFFIX = ' | Aswanth Karuppannan';
 const DEFAULT_DESC = 'Backend-focused developer portfolio showcasing Java, Spring Boot, IoT systems, AI-powered engineering projects, and creative technical work.';
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;

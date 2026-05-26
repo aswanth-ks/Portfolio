@@ -101,12 +101,12 @@ export default function Photo() {
             "@type": "CollectionPage",
             "name": "Photography Portfolio — Aswanth Karuppannan",
             "description": "Cinematic street photography, travel frames from Thailand, and visual storytelling by Aswanth Karuppannan — photographer and creative technologist from Tamil Nadu, India.",
-            "url": "https://aswanthks-portfolio.vercel.app/photo",
+            "url": "https://aswanthks.dev/photo",
             "author": {
               "@type": "Person",
               "name": "Aswanth Karuppannan",
               "jobTitle": "Photographer / Visual Storyteller / Creative Technologist",
-              "url": "https://aswanthks-portfolio.vercel.app",
+              "url": "https://aswanthks.dev",
               "sameAs": [
                 "https://github.com/aswanth-ks",
                 "https://www.linkedin.com/in/aswanth-karuppannan/",
